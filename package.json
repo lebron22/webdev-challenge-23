@@ -1,0 +1,14 @@
+{
+  "name": "webdev-challenge-23",
+  "version": "1.0.0",
+  "description": "webdev-challenge-23",
+  "main": "scripts/main.js",
+  "scripts": {
+    "compile:sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "author": "Kamil Bronisz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
