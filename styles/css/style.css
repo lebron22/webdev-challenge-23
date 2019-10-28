@@ -505,3 +505,57 @@ template {
     z-index: -1; }
     .home__img img {
       width: 100%; }
+
+.about-us {
+  background: #0081ff;
+  width: 100%;
+  color: #ffffff;
+  padding: 100px 0; }
+  .about-us .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .about-us__title {
+    font-family: "Leckerli One", sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px; }
+    @media (max-width: 560px) {
+      .about-us__title {
+        font-size: 28px; } }
+  .about-us__content {
+    width: 45%;
+    line-height: 30px; }
+    @media (max-width: 660px) {
+      .about-us__content {
+        width: 100%; } }
+    .about-us__content h4 {
+      font-family: Montserrat, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 0; }
+      @media screen and (max-width: 560px) {
+        .about-us__content h4 {
+          font-size: 20px; } }
+  .about-us__btn {
+    font-size: 15px;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #3b437499 50%, #3b4374 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: 0.4s linear;
+    color: #ffffff;
+    margin: 10px 0; }
+    .about-us__btn:hover {
+      background-position: left; }
+    .about-us__btn:focus {
+      outline: none; }
+    .about-us__btn:active {
+      transform: scale(1.05);
+      transition: none; }
