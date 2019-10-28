@@ -1,4 +1,10 @@
-h1 {
-  background-color: green;
-  color: white;
-}
+@import "./base/global";
+@import "./base/normalize";
+
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./components/container";
+
+@import "layout/nav";
+@import "layout/home";

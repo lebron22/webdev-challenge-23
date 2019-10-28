@@ -1,0 +1,45 @@
+@mixin title {
+  font-family: $font-title;
+  font-size: $font-size-title;
+  font-weight: 400;
+
+  @media (max-width: 560px) {
+    font-size: $font-size-title-mobile;
+  }
+}
+
+@mixin subtitle {
+  font-family: $font-subtitle;
+  font-size: $font-size-subtitle;
+  font-weight: 900;
+
+  @media (max-width: 560px) {
+    font-size: $font-size-subtitle-mobile;
+  }
+}
+
+@mixin btn($bgFrom, $bgTo) {
+  font-size: 15px;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, $bgTo 50%, $bgFrom 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: 0.4s linear;
+
+  &:hover {
+    background-position: left;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(1.05);
+    transition: none;
+  }
+}
