@@ -80,6 +80,7 @@
       }
 
       &:after {
+        opacity: 0;
         content: "";
         position: absolute;
         bottom: 0;
@@ -90,6 +91,7 @@
         transition: 0.4s;
       }
       &:hover:after {
+        opacity: 1;
         left: 10px;
         right: 10px;
 
