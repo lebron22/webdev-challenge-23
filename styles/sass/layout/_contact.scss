@@ -1,0 +1,241 @@
+.footer {
+  background-image: url("/images/contact-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 100px;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+
+    @media #{$tablet} {
+      flex-wrap: wrap;
+    }
+
+    & a {
+      box-sizing: border-box;
+      text-decoration: none;
+      color: inherit;
+      padding: 20px;
+      margin: 20px;
+      border: 3px solid white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background: $main-color;
+        transform: scale(0.95);
+      }
+
+      & i {
+        font-size: 25px;
+      }
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+
+    & span a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 30px;
+
+  @media #{$mobile} {
+    padding: 0;
+  }
+
+  &__details {
+    width: 50%;
+
+    @media #{$tablet} {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    @include title;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+
+    @media #{$mobile} {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    @include subtitle;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  &__email,
+  &__phone,
+  &__address {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    position: relative;
+    padding: 0 0 50px 100px;
+
+    & span:first-child {
+      font-weight: 700;
+      padding-bottom: 5px;
+    }
+
+    & span:nth-child(n + 2) {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    & span:nth-child(n + 2) a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:before {
+      position: absolute;
+      transform: scale(0.9);
+    }
+  }
+
+  &__email {
+    &:before {
+      content: url("/images/address-icon1.svg");
+      top: 0;
+      left: 0;
+
+      @media #{$mobile} {
+        left: 25px;
+      }
+    }
+  }
+
+  &__phone {
+    &:before {
+      content: url("/images/address-icon3.svg");
+      top: 0;
+      left: 10px;
+
+      @media #{$mobile} {
+        left: 35px;
+      }
+    }
+  }
+
+  &__address {
+    & span:nth-child(n + 2) {
+      width: 200px;
+    }
+
+    &:before {
+      content: url("/images/address-icon2.svg");
+      top: 0;
+      left: 2px;
+
+      @media #{$mobile} {
+        left: 27px;
+      }
+    }
+  }
+
+  &__form {
+    width: 50%;
+
+    @media #{$tablet} {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-title {
+      @include subtitle;
+    }
+
+    &-field {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+
+      @media #{$tablet} {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+      }
+
+      & label {
+        display: block;
+        width: 20%;
+
+        @media #{$tablet} {
+          padding-bottom: 10px;
+        }
+      }
+
+      & input,
+      & textarea {
+        background: #2b2b2b;
+        border: none;
+        border-radius: 15px;
+        width: 80%;
+        height: 35px;
+        color: #ffffff;
+        padding: 0 10px;
+
+        @media #{$tablet} {
+          width: 100%;
+        }
+
+        &:focus {
+          outline: none;
+          border: 1px solid springgreen;
+        }
+      }
+
+      & textarea {
+        height: 100px;
+        overflow: hidden;
+        resize: none;
+      }
+    }
+
+    &-btn {
+      @include btn(#0280f9, #0280f999);
+      color: #ffffff;
+      margin: 30px 100px;
+
+      @media #{$tablet} {
+        margin: 10px 0;
+      }
+    }
+  }
+}
