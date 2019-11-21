@@ -1,0 +1,19 @@
+{
+  "name": "webdev-challenge-23",
+  "version": "1.0.0",
+  "description": "webdev-challenge-23",
+  "main": "scripts/main.js",
+  "homepage": "https://lebron22.github.io/webdev-challenge-23",
+  "scripts": {
+    "compile:sass": "node-sass styles/sass/main.scss styles/css/style.css -w",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "Kamil Bronisz",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
