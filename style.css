@@ -220,7 +220,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: 1px dotted;
 }
 
 /**
@@ -494,7 +494,7 @@ template {
 }
 
 .home {
-  background-image: url("/images/home-bg.png");
+  background-image: url("./images//home-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -756,13 +756,13 @@ template {
   }
 }
 .services__card-subtitle1:after {
-  content: url("/images/1.svg");
+  content: url("./images/1.svg");
 }
 .services__card-subtitle2:after {
-  content: url("/images/2.svg");
+  content: url("./images/2.svg");
 }
 .services__card-subtitle3:after {
-  content: url("/images/3.svg");
+  content: url("./images/3.svg");
 }
 
 .profile {
@@ -880,7 +880,7 @@ template {
 }
 
 .client {
-  background-image: url("/images/client-bg.png");
+  background-image: url("./images/client-bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -1152,7 +1152,7 @@ template {
   }
 }
 .blog__articles--aside article:first-child {
-  background-image: url("/images/blog_bg.png");
+  background-image: url("./images/blog_bg.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -1357,7 +1357,7 @@ template {
 }
 
 .footer {
-  background-image: url("/images/contact-bg.png");
+  background-image: url("./images/contact-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1496,7 +1496,7 @@ template {
   transform: scale(0.9);
 }
 .contact__email:before {
-  content: url("/images/address-icon1.svg");
+  content: url("./images/address-icon1.svg");
   top: 0;
   left: 0;
 }
@@ -1506,7 +1506,7 @@ template {
   }
 }
 .contact__phone:before {
-  content: url("/images/address-icon3.svg");
+  content: url("./images/address-icon3.svg");
   top: 0;
   left: 10px;
 }
@@ -1519,7 +1519,7 @@ template {
   width: 200px;
 }
 .contact__address:before {
-  content: url("/images/address-icon2.svg");
+  content: url("./images/address-icon2.svg");
   top: 0;
   left: 2px;
 }
