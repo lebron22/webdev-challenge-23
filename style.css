@@ -494,7 +494,7 @@ template {
 }
 
 .home {
-  background-image: url("./images//home-bg.png");
+  background-image: url("./images/home-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
